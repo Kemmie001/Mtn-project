@@ -111,6 +111,8 @@ function gotData (doc){
 <span>
     <h4 style="color: #1512BB;">Added by</h4>
         <p>${nameperson}</p>
+        <button><a href="${filename}">Download Resource
+        </button>
 </span></div>
     `
 }

@@ -69,7 +69,7 @@ h2{
 }
 .team-img{
     border-radius: 50%;
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
@@ -91,7 +91,18 @@ h2{
 .grid div{
     width: 70%;
 }
-
+.flex span button{
+    background-color: #1512BB;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+}
+.flex span button a{
+    text-decoration: none;
+    font-weight: bold;
+}
 form button{
     background-color: #1512BB;
     width: 7rem;
