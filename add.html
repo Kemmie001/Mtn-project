@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+            <nav>
+                    <ul>
+                            <li><Span class="logo">School Resource</Span></li>
+                            <i class="fas fa-bars small"></i>
+                            <ul class="left">
+                                
+                                <li><a href="index.html" class="nav-link">Home</a></li>
+                                <li><a href="" class="nav-link">About</a></li>
+                                <li><a href="" class="nav-link">Categories</a></li>
+                                <li><a href="" class="nav-link">Contact Us</a></li>
+                             <li>
+                                 <button class="left">
+                                     <a href="add.html">
+                                         <i class="fas fa-plus"></i>
+                                         Add resource
+                                     </a>
+                                 </button>
+                             </li>
+                         </ul>
+                         <div class="show">
+                                <li><a href="index.html" class="nav-link">Home</a></li>
+                                <li><a href="" class="nav-link">About</a></li>
+                                <li><a href="" class="nav-link">Categories</a></li>
+                                <li><a href="" class="nav-link">Contact Us</a></li>
+                             <li>
+                                 <button class="left-button">
+                                     <a href="add.html">
+                                         <i class="fas fa-plus"></i>
+                                         Add resource
+                                     </a>
+                                 </button>
+                             </li>
+                            </div>
+                        </ul>
+                </nav> 
+                <ul class="book-collection"></ul>
+                <div class="alert">You have sucessfully uploaded a new resource.</div> 
+            <form action="" class="book-details grid" onsubmit="return false;">
+                    <label for="material-name">Book Title</label>
+                    <input required class="material-name" type="text" name="material-name" id="material-name">
+                    <label for="author">Author's Name</label>
+                    <input required class="author-name"  type="text" name="author" id="author">
+                    <label for="category">Book Category</label>
+                    <select required name="category" id="category">
+                        <option value="Categories" disabled selected>Subject</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="English Language">English Language</option>
+                        <option value="General Science">General Science</option>
+                        <option value="Basic-Science">Basic Science</option>
+                        <option value="Technology">Basic Technology</option>
+                        <option value="Business">Business Studies</option>
+                        <option value="Home-Economics">Home Economics</option>
+                        <option value="Civic Education">Civic Education</option>
+                    </select>
+                    <input required type="file" name="file" id="file">
+                    <label for="name">Your Name</label>
+                    <input required type="text" name="name" id="name">
+                    <button class="submit" type="submit" id="send">Send</button>
+                </form>
+                <div>
+
+                </div>
+    </main>
+    <footer>
+            <div>
+                <span class="logo">School Resource</span>
+                <p>Contact us:</p>
+                <a href="mailto:#">hello@schoolresource.com</a>
+                <span class="container">&COPY; 2020 School Resource</span>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-firestore.js"></script>
+        
+        <script src="app.js"></script>
+</body>
+</html>

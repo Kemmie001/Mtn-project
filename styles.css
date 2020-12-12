@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+main{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #E5E5E5;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    padding-top: 1rem;
+}
+
+.logo{
+    color: #1512BB;
+    font-weight: 800;
+    line-height: 60px;
+    font-size: 2rem;
+    font-style: normal;
+    letter-spacing: 0.6px;
+}
+.left li{
+    padding-left: 1rem;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+li button{
+    background-color: #1512BB;
+    margin-top: -0.7rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+button a{
+    color: #ffffff;
+}
+.left{
+    margin-left: auto;
+}
+.nav-link:hover{
+    color: #1512BB;
+    font-weight: bolder;
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+}
+h2{
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+.about p{
+    padding-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 27px;
+    color: #000000;
+}
+.team-img{
+    border-radius: 50%;
+    width: 50%;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 2rem; */
+}
+.container h3{
+    text-align: center;
+}
+.contact p{
+    margin-bottom: 1rem;
+}
+.grid{
+    display: grid;
+    
+}
+.grid div{
+    width: 70%;
+}
+
+form button{
+    background-color: #1512BB;
+    width: 7rem;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+input, textarea, select{
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    outline: transparent;
+    display: inline-block;
+}
+.mr-3{
+    margin-right: 1rem;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.name input{
+    width: 100%;
+    padding-left: 1rem;
+}
+.block{
+    display: block;
+    margin-top: 1rem;
+    width: 97%;
+    padding-left: 3%;
+}
+.book-details input, select{
+    width: 70%;
+    padding-left: 1rem;
+    
+}
+.book-details label{
+    margin-top: 1rem;
+}
+.alert{
+    display: none;
+    width: 50%;
+    margin: auto;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    background-color: green;
+}
+.category input{
+    width: 5%;
+    margin-right: 0;
+    cursor: pointer;
+}
+#categories{
+    display: grid;
+    grid-template-columns:repeat(2, minmax(5rem, 250px));
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+#categories div{
+    background-color: #ffffff;
+    box-shadow: 0.01px 0.01px 2px 0.01px;
+    text-align: center;
+    font-weight: 800;
+    padding: 1rem;
+}
+footer{
+    padding: 1rem;
+    background-color: #ffffff;
+}
+.container{
+    padding: 0.5rem;
+}
+.flex{
+    background-color: #ffffff;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.flex span {
+    font-weight: 700;
+}
+.copy{
+    padding-top: 1rem;
+    color: #8d8989;
+    font-weight:600;
+}
+@media screen and (max-width:768px){
+    .logo{
+        line-height: 50px;
+        font-size: 2rem;
+    }
+    .left{ 
+        display: none;
+    }
+    .small{
+        margin-left: auto;
+        font-size: 2rem;
+        padding-top: 1rem;
+        color: #1512BB;
+        cursor: pointer;
+    }
+    .show{
+        /* display: inline-block; */
+        position: fixed;
+        top: 10%;
+        right: 0;
+        height: 50%;
+        width: 0;
+        overflow: hidden;
+        transition: all 0.007s ease-in-out;
+        background-color: rgba(229, 229, 229, 0.8);
+        z-index: 3;
+
+    }
+    .nav-show{
+        width: 100%;
+    }
+    .show li{
+        padding-top: 1rem;
+        display: block;
+        margin-left:2rem ;
+    }
+}
+@media screen and (min-width:768px){
+    .small{
+        display: none;
+    }
+    .show{
+        display: none;
+    }
+    .fa-bars{
+        visibility: hidden;
+    }
+    .grid div{
+        width: 50%;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-around;
+    }
+    span h4{
+        padding-bottom: 1rem;
+    }
+    .flex-large{
+        display: flex;
+    }
+    footer{
+        padding: 3rem;
+    }
+}
+@media screen and (min-width:1200px){
+    .left li{
+        padding-left: 3rem;
+    }
+}
